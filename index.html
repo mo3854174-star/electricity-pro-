@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>سیستەمی کارەبا</title>
+</head>
 
+<body>
+
+<h2>سیستەمی پسوڵە</h2>
+
+<input id="name" placeholder="ناو">
+<input id="kw" placeholder="کیلۆوات">
+<input id="price" placeholder="نرخ">
+
+<button onclick="calc()">حیساب</button>
+
+<h3 id="result"></h3>
+
+<script>
+function calc(){
+let name = document.getElementById("name").value;
+let kw = document.getElementById("kw").value;
+let price = document.getElementById("price").value;
+
+let total = kw * price;
+
+document.getElementById("result").innerHTML =
+name + " = " + total + " IQD";
+}
+</script>
+
+</body>
+</html>
